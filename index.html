@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAYA — Suivi menstruel simple, doux et discret</title>
+  <meta name="description" content="NAYA est une application pensée pour suivre votre cycle, comprendre votre corps et poser vos questions librement dans un espace simple, doux et discret." />
+
+  <!-- Typographies : Cormorant Garamond (titres serif) + Inter (UI / body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================= -->
+  <!-- NAVBAR                                         -->
+  <!-- ============================================= -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo" aria-label="Accueil NAYA">
+        <img src="Group 1.png" alt="Logo Naya" />
+      </a>
+
+      <!-- Bouton burger (mobile uniquement) -->
+      <button
+        class="nav-burger"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="main-nav">
+        <ul class="nav-links">
+          <li><a href="#pourquoi">Pourquoi Naya</a></li>
+          <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+          <li><a href="#chat">Chat NAYA</a></li>
+          <li><a href="#confidentialite">Confidentialité</a></li>
+          <li><a href="#preinscription">Préinscription</a></li>
+        </ul>
+        <a href="#preinscription" class="btn btn-primary nav-cta">
+          Rejoindre la liste d’attente
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================= -->
+  <!-- HERO                                           -->
+  <!-- ============================================= -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Votre cycle, avec plus<br />
+          de clarté et de sérénité.
+        </h1>
+        <p class="hero-subtitle">
+          NAYA est une application pensée pour suivre votre cycle,
+          comprendre votre corps et poser vos questions librement, dans un
+          espace simple, doux et discret.
+        </p>
+        <div class="hero-ctas">
+          <a href="#preinscription" class="btn btn-primary">
+            Rejoindre la liste d’attente
+          </a>
+          <a href="#pourquoi" class="btn btn-outline">Découvrir NAYA</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- Cercles décoratifs -->
+        <span class="deco-circle deco-circle--orange" aria-hidden="true"></span>
+        <span class="deco-circle deco-circle--purple" aria-hidden="true"></span>
+        <img
+          src="Hero section.png"
+          alt="Aperçu de l’application NAYA — écran d’accueil avec suivi du cycle"
+          class="hero-phone"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- POURQUOI NAYA (v1 — photo calendrier)         -->
+  <!-- ============================================= -->
+  <section class="section section--pourquoi" id="pourquoi">
+    <div class="container">
+      <header class="section-head">
+        <h2 class="section-title">POURQUOI NAYA</h2>
+        <p class="section-subtitle">Une façon plus douce de vivre son cycle</p>
+      </header>
+
+      <div class="two-col">
+        <div class="two-col__text">
+          <p class="lead">
+            Suivre son cycle ne devrait pas être compliqué. NAYA vous aide
+            à garder des repères simples sur vos règles, vos symptômes,
+            votre humeur et votre énergie, sans surcharge d’informations.
+          </p>
+
+          <h3 class="points-title">Points clés</h3>
+          <ul class="points-list">
+            <li>Suivi simple du cycle</li>
+            <li>Chat libre et accessible</li>
+            <li>Confidentialité renforcée</li>
+          </ul>
+        </div>
+
+        <div class="two-col__visual">
+          <img
+            src="Subtract.png"
+            alt="Calendrier menstruel avec cup, tampon et plaquette de pilules"
+            class="pourquoi-photo"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- POURQUOI NAYA (v2 — fonctionnalités)          -->
+  <!-- ============================================= -->
+  <section class="section section--features" id="fonctionnalites">
+    <div class="container">
+      <header class="section-head">
+        <h2 class="section-title">POURQUOI NAYA</h2>
+        <p class="section-subtitle">Une façon plus douce de vivre son cycle</p>
+      </header>
+
+      <!-- Bloc A : mockup à gauche, carte sombre à droite -->
+      <div class="feature-row">
+        <div class="feature-visual">
+          <img src="Suivi de cycle.png" alt="Écran Suivi du cycle" />
+        </div>
+        <article class="feature-card">
+          <h3>Suivi du cycle</h3>
+          <p>Anticipez vos règles et gardez des repères simples au fil du temps.</p>
+        </article>
+      </div>
+
+      <!-- Bloc B : carte sombre à gauche, mockup à droite -->
+      <div class="feature-row feature-row--reverse">
+        <div class="feature-visual">
+          <img src="Symptom.png" alt="Écran ajout de symptômes" />
+        </div>
+        <article class="feature-card">
+          <h3>Symptômes, humeur et<br />énergie</h3>
+          <p>Notez ce que vous ressentez pour mieux comprendre votre corps.</p>
+        </article>
+      </div>
+
+      <!-- Bloc C : mockup à gauche, carte sombre à droite -->
+      <div class="feature-row">
+        <div class="feature-visual">
+          <img src="Chat naya 1.png" alt="Écran Chat libre avec NAYA" />
+        </div>
+        <article class="feature-card">
+          <h3>Chat libre</h3>
+          <p>Posez vos questions dans un espace plus humain, simple et rassurant.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- LE CHAT NAYA                                   -->
+  <!-- ============================================= -->
+  <section class="section section--chat" id="chat">
+    <div class="container">
+      <header class="section-head">
+        <h2 class="section-title">LE CHAT NAYA</h2>
+        <p class="section-subtitle">Une façon plus douce de vivre son cycle</p>
+      </header>
+
+      <div class="two-col two-col--chat">
+        <div class="two-col__text">
+          <p class="lead">
+            Plus qu’un suivi, un espace d’écoute. <strong>NAYA</strong> ne se
+            limite pas à enregistrer des dates. L’application vous accompagne
+            aussi lorsque vous avez besoin de comprendre un symptôme, d’exprimer
+            un ressenti ou d’être orientée vers la bonne suite.
+          </p>
+          <a href="#preinscription" class="btn btn-primary">
+            Découvrir le chat NAYA
+          </a>
+        </div>
+
+        <div class="two-col__visual">
+          <img
+            src="Chat naya section.png"
+            alt="Écran du chat NAYA avec journal de symptômes"
+            class="chat-phone"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- CONFIDENTIALITÉ                                -->
+  <!-- ============================================= -->
+  <section class="section section--privacy" id="confidentialite">
+    <div class="container">
+      <header class="section-head">
+        <h2 class="section-title">CONFIDENTIALITÉ</h2>
+        <p class="section-subtitle">Une façon plus douce de vivre son cycle</p>
+      </header>
+
+      <!-- 3 icônes en ligne -->
+      <div class="privacy-icons">
+        <!-- Icône 1 : base de données avec cadenas -->
+        <div class="privacy-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <ellipse cx="30" cy="18" rx="20" ry="7" stroke="#925E78" stroke-width="2"/>
+            <path d="M10 18 V50 C10 54 19 57 30 57 C41 57 50 54 50 50 V18" stroke="#925E78" stroke-width="2" fill="none"/>
+            <path d="M10 34 C10 38 19 41 30 41 C41 41 50 38 50 34" stroke="#925E78" stroke-width="2" fill="none"/>
+            <!-- cadenas -->
+            <rect x="48" y="46" width="22" height="18" rx="2" stroke="#925E78" stroke-width="2" fill="#fff"/>
+            <path d="M53 46 V40 C53 36 56 33 59 33 C62 33 65 36 65 40 V46" stroke="#925E78" stroke-width="2" fill="none"/>
+            <circle cx="59" cy="55" r="2" fill="#925E78"/>
+          </svg>
+        </div>
+
+        <!-- Icône 2 : œil barré -->
+        <div class="privacy-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M10 40 C18 26 28 20 40 20 C52 20 62 26 70 40 C62 54 52 60 40 60 C28 60 18 54 10 40 Z" stroke="#925E78" stroke-width="2" fill="none"/>
+            <circle cx="40" cy="40" r="9" stroke="#925E78" stroke-width="2" fill="none"/>
+            <line x1="14" y1="14" x2="66" y2="66" stroke="#925E78" stroke-width="2.5"/>
+          </svg>
+        </div>
+
+        <!-- Icône 3 : graphique + personne (étoiles au-dessus) -->
+        <div class="privacy-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- étoiles -->
+            <path d="M22 10 l1.5 3 3 .4 -2.2 2.1 .5 3 -2.8-1.5 -2.8 1.5 .5-3 -2.2-2.1 3-.4z" stroke="#925E78" stroke-width="1.5" fill="none"/>
+            <path d="M40 6 l1.5 3 3 .4 -2.2 2.1 .5 3 -2.8-1.5 -2.8 1.5 .5-3 -2.2-2.1 3-.4z" stroke="#925E78" stroke-width="1.5" fill="none"/>
+            <path d="M58 10 l1.5 3 3 .4 -2.2 2.1 .5 3 -2.8-1.5 -2.8 1.5 .5-3 -2.2-2.1 3-.4z" stroke="#925E78" stroke-width="1.5" fill="none"/>
+            <!-- axes -->
+            <line x1="14" y1="68" x2="70" y2="68" stroke="#925E78" stroke-width="2"/>
+            <line x1="14" y1="30" x2="14" y2="68" stroke="#925E78" stroke-width="2"/>
+            <!-- courbe -->
+            <path d="M16 60 L28 50 L40 55 L52 40 L66 34" stroke="#925E78" stroke-width="2" fill="none"/>
+            <!-- personne -->
+            <circle cx="52" cy="52" r="4" stroke="#925E78" stroke-width="2" fill="#fff"/>
+            <path d="M45 64 C45 58 49 56 52 56 C55 56 59 58 59 64" stroke="#925E78" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+      </div>
+
+      <p class="privacy-text">
+        Parce que le suivi menstruel touche à l’intime, <strong>NAYA</strong>
+        accorde une attention particulière à la confidentialité, au ton des
+        notifications et à la simplicité de l’expérience.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- PRÉINSCRIPTION                                 -->
+  <!-- ============================================= -->
+  <section class="section section--signup" id="preinscription">
+    <div class="container">
+      <header class="signup-head">
+        <h2 class="signup-title">Préinscription</h2>
+        <p class="signup-lede">Soyez parmi les premières à découvrir NAYA</p>
+        <p class="signup-sub">
+          Inscrivez-vous pour suivre l’avancement du projet et être informée
+          de son lancement.
+        </p>
+      </header>
+
+      <form class="signup-form" novalidate>
+        <label for="email" class="signup-label">Adresse e-mail</label>
+        <div class="signup-row">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Votre adresse e-mail"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Je m’inscris</button>
+        </div>
+        <p class="signup-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FOOTER                                         -->
+  <!-- ============================================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="Group 1 (1).png" alt="Naya" class="footer-logo" />
+        <p class="footer-tagline">
+          <em>Suivi menstruel simple,<br />doux et discret.</em>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Confidentialité</h4>
+        <ul>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Conditions d’utilisation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-social">
+        <h4>Suivez-nous</h4>
+        <div class="social-row" aria-label="Réseaux sociaux">
+          <!-- Instagram -->
+          <a href="#" aria-label="Instagram" class="social-btn">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+            </svg>
+          </a>
+          <!-- X / Twitter -->
+          <a href="#" aria-label="X" class="social-btn">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 4 L20 20 M20 4 L4 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <!-- TikTok -->
+          <a href="#" aria-label="TikTok" class="social-btn">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M14 4 V15 a3.5 3.5 0 1 1 -3.5 -3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+              <path d="M14 4 C14 7 16 9 19 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
