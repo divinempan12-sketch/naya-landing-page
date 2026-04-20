@@ -1,9 +1,5 @@
 /* =================================================
    NAYA — script.js
-   Responsabilités :
-   - ouverture / fermeture du menu mobile (burger)
-   - validation légère du formulaire de préinscription
-   - fermeture auto du menu au clic sur un lien (mobile)
    ================================================= */
 
 (function () {
@@ -21,10 +17,8 @@
       burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
 
-    // Ferme le menu quand on clique sur un lien (mobile)
     menu.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", function () {
-        // On ne referme que si le menu est en mode mobile (affiché en overlay)
         if (window.matchMedia("(max-width: 1023px)").matches) {
           menu.classList.remove("is-open");
           burger.setAttribute("aria-expanded", "false");
@@ -34,7 +28,7 @@
   }
 
   /* ---------------------------------------------
-     2. Formulaire de préinscription
+     2. Formulaire de préinscription (Mailchimp)
      --------------------------------------------- */
   const form = document.querySelector(".signup-form");
 
@@ -43,29 +37,28 @@
     const feedback = form.querySelector(".signup-feedback");
 
     form.addEventListener("submit", function (e) {
-      e.preventDefault();
       const value = (input.value || "").trim();
-
-      // Validation simple d'email
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+      // Validation côté client AVANT l'envoi vers Mailchimp
       if (!value) {
+        e.preventDefault();
         feedback.textContent = "Merci de renseigner votre adresse e-mail.";
         feedback.style.color = "#925E78";
         return;
       }
 
       if (!emailRegex.test(value)) {
+        e.preventDefault();
         feedback.textContent = "L'adresse e-mail ne semble pas valide.";
         feedback.style.color = "#925E78";
         return;
       }
 
-      // Succès (simulé côté client)
+      // Email valide : on laisse le formulaire partir vers Mailchimp
       feedback.textContent =
-        "Merci ! Vous êtes bien inscrite à la liste d'attente. 🌸";
+        "Merci ! Vérifiez votre boîte mail pour confirmer votre inscription. 🌸";
       feedback.style.color = "#12263A";
-      input.value = "";
     });
   }
 })();
